@@ -19,7 +19,7 @@ npm install
 Thats it.
 
 ## Test server
-To run the vite test server, simply run ``npm dev -- --open`` and it will automatically open it up in a new window.
+To run the vite test server, simply run ``npm run dev -- --open`` and it will automatically open it up in a new window.
 
 ### Note 
 In order to get Tailwind to work properly, you need to open up a new terminal and run ``npm watch``
@@ -28,6 +28,6 @@ In order to get Tailwind to work properly, you need to open up a new terminal an
 
 Simply run
 ```
-npm build
+npm run build
 ```
 Vite will build the project and Tailwind will minify the root.css file. The output folder is defaulted to dist.
