@@ -833,6 +833,54 @@ body {
   --tw-bg-opacity: 0;
 }
 
+.bg-glow {
+  background-image: url('/BG.png');
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+.bg-\[center_top\] {
+  background-position: center top;
+}
+
+.bg-\[50\%_calc\(50\%-50px\)\] {
+  background-position: 50% calc(50% - 50px);
+}
+
+.bg-\[left_calc\(50\%-50px\)\] {
+  background-position: left calc(50% - 50px);
+}
+
+.bg-\[25\%_calc\(50\%-50px\)\] {
+  background-position: 25% calc(50% - 50px);
+}
+
+.bg-\[calc\(0\%-200px\)_calc\(50\%-50px\)\] {
+  background-position: calc(0% - 200px) calc(50% - 50px);
+}
+
+.bg-\[calc\(0\%-500px\)_calc\(50\%-50px\)\] {
+  background-position: calc(0% - 500px) calc(50% - 50px);
+}
+
+.bg-\[calc\(0\%-500px\)_calc\(0\%-50px\)\] {
+  background-position: calc(0% - 500px) calc(0% - 50px);
+}
+
+.bg-\[calc\(0\%-500px\)_calc\(0\%-200px\)\] {
+  background-position: calc(0% - 500px) calc(0% - 200px);
+}
+
+.bg-\[calc\(0\%-500px\)_calc\(0\%-250px\)\] {
+  background-position: calc(0% - 500px) calc(0% - 250px);
+}
+
+.bg-\[calc\(0\%-500px\)_calc\(0\%-350px\)\] {
+  background-position: calc(0% - 500px) calc(0% - 350px);
+}
+
 .object-none {
   -o-object-fit: none;
      object-fit: none;
@@ -939,11 +987,6 @@ body {
   opacity: 0;
 }
 
-.blur-\[40px\] {
-  --tw-blur: blur(40px);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
 .blur-\[50px\] {
   --tw-blur: blur(50px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1043,10 +1086,6 @@ body {
     position: absolute;
   }
 
-  .lg\:bottom-16 {
-    bottom: 4rem;
-  }
-
   .lg\:top-1\/2 {
     top: 50%;
   }
@@ -1105,6 +1144,50 @@ body {
 
   .lg\:bg-auto {
     background-size: auto;
+  }
+
+  .lg\:bg-center {
+    background-position: center;
+  }
+
+  .lg\:bg-\[50\%_50\%\] {
+    background-position: 50% 50%;
+  }
+
+  .lg\:bg-\[50\%_50\%_-200px\] {
+    background-position: 50% 50% -200px;
+  }
+
+  .lg\:bg-\[50\%_50\%_200px\] {
+    background-position: 50% 50% 200px;
+  }
+
+  .lg\:bg-\[50\%_0_50\%_200px\] {
+    background-position: 50% 0 50% 200px;
+  }
+
+  .lg\:bg-\[50\%_calc\(50\%-200px\)\] {
+    background-position: 50% calc(50% - 200px);
+  }
+
+  .lg\:bg-\[calc\(50\%-200px\)_50\%\] {
+    background-position: calc(50% - 200px) 50%;
+  }
+
+  .lg\:bg-\[50\%_calc\(50\%\+200px\)\] {
+    background-position: 50% calc(50% + 200px);
+  }
+
+  .lg\:bg-\[50\%_calc\(50\%\)\] {
+    background-position: 50% calc(50%);
+  }
+
+  .lg\:bg-\[50\%_calc\(50\%-50px\)\] {
+    background-position: 50% calc(50% - 50px);
+  }
+
+  .lg\:bg-\[50\%_calc\(50\%-100px\)\] {
+    background-position: 50% calc(50% - 100px);
   }
 
   .lg\:py-14 {

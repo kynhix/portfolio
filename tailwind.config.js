@@ -8,6 +8,9 @@ export default {
         'fade-move-in': 'fade-move-in 0.75s ease-out forwards',
         'move-across': 'move-across 60s ease infinite',
       },
+      backgroundImage: {
+        'glow': "url('/BG.png')",
+      },
       dropShadow: {
         'glow': '0 0 100px rgba(99, 114, 255, 0.13)',
       },
@@ -25,7 +28,7 @@ export default {
           '-moz-user-drag': 'none',
           '-o-user-drag': 'none',
           'user-drag': 'none'
-        }
+        },
       });
     })
   ],
