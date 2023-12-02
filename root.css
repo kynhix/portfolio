@@ -24,9 +24,14 @@
   }
 
   @keyframes fade-move-in {
-    from {opacity: 0; transform: translateY(-100px)}
+    from {opacity: 0; transform: translateY(-100px);}
     70% {opacity: 0.3;}
     to {opacity: 1;}
+  }
+
+  @keyframes move-across {
+    0% {transform: translateX(-100vw);}
+    50%, 100% {transform: translateX(200vw);}
   }
 
   .coolbg {

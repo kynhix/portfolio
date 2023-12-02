@@ -15,9 +15,15 @@
 
 <body class="overflow-hidden lg:overflow-auto text-white flex lg:justify-center lg:items-center lg:py-14 bg-[#0D111D]">
   <div
-    class="overflow-auto lg:overflow-hidden w-screen h-screen lg:w-[1024px] lg:h-[1024px] relative bg-gray-900 bg-cover bg-fixed bg-no-repeat lg:bg-auto bg-center bg-[url('bg.png')] lg:rounded-2xl lg:drop-shadow-glow lg:border border-sky-800 border-opacity-50">
+    class="relative overflow-auto lg:overflow-hidden w-screen h-screen lg:w-[1024px] lg:h-[1024px] lg:bg-auto bg-[#111727] lg:rounded-2xl lg:drop-shadow-glow lg:border border-sky-800 border-opacity-50">
     <div
       class="w-full h-fit lg:w-[1024px] lg:h-[1024px] p-2 flex-col justify-start items-center gap-[11px] inline-flex">
+      <img src="BG.png" width="1877" height="1533"
+        class="fixed select-none drag-none lg:absolute w-[1877px] h-[1533px] lg:h-[calc(100%+200px)] object-none left-0 top-[-200px]" />
+      <div class="lg:-z-10 absolute">
+        <img src="vec-2.svg" class="fixed left-0 lg:top-1/2 top-[calc(50vh-50px)] blur-[50px] animate-move-across" />
+        <!-- <img src="vec-2.svg" class="fixed left-0 lg:bottom-16 blur-[40px] animate-move-across" /> -->
+      </div>
       <div class="self-stretch h-32 pb-[35px] flex-col justify-start items-start flex">
         <div
           class="text-[#A8D5FF] text-4xl overflow-visible lg:text-5xl leading-tight lg:leading-tight font-bold after:content-['Kristopher_Hicks'] after:bg-clip-text after:name-gradient relative">
@@ -26,9 +32,12 @@
       </div>
       <img class="animate-fade-move-in w-[163px] h-[163px] rounded-full border-2 border-white" src="me.jpeg" />
       <div class="animate-fade-move-in justify-start items-center gap-4 inline-flex">
-        <a href="https://www.linkedin.com/in/kristopher-hicks-62486b171/" class="w-12 h-12 relative"><img
-            src="linked-in.svg" alt="LinkedIn" /></a>
-        <a href="https://github.com/kynhix" class="w-12 h-12 relative"><img src="github.svg" alt="GitHub" /></a>
+        <a href="https://www.linkedin.com/in/kristopher-hicks-62486b171/"
+          class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="linked-in.svg"
+            alt="LinkedIn" /></a>
+        <a href="https://github.com/kynhix"
+          class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="github.svg"
+            alt="GitHub" /></a>
       </div>
       <div class="self-stretch py-[53px] justify-center items-start gap-[7px] flex flex-col lg:flex-row lg:inline-flex">
         <div
@@ -76,24 +85,25 @@
       </div>
       <div class="animate-fade-move-in self-stretch text-[29px] font-semibold">Projects</div>
       <div class="self-stretch justify-start items-center gap-4 flex-col lg:flex-row inline-flex">
-        <div
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/30 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Title</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">This is some
-            filler text for the description this makes it long enough so it can be justified and what not.</div>
-        </div>
-        <div
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/30 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Title</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">This is some
-            filler text for the description this makes it long enough so it can be justified and what not.</div>
-        </div>
-        <div
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/30 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Title</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">This is some
-            filler text for the description this makes it long enough so it can be justified and what not.</div>
-        </div>
+        <a href="https://rockbox.kynhix.dev/"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Rockbox</div>
+          <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">Website designed for a band. Made with SolidJS,
+            SolidStart, and Tailwind.</div>
+        </a>
+        <a href="https://github.com/kynhix/portfolio"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Portfolio</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">Source code for this portolio website. Made
+            with minimal JavaScript, HTML, and Tailwind.</div>
+        </a>
+        <a href="https://github.com/kynhix/solid-open-ecommerce"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Ecommerce (WIP)</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">This is my latest project that I am still
+            working on. It is an ecommerce site built with SolidJS, SolidStart, Supabase, and bootstrap.</div>
+        </a>
       </div>
     </div>
   </div>
