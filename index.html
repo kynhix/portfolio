@@ -1,37 +1,64 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="bg-[#0D111D]">
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/svg+xml" href="/k.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="/root.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-
   <title>Kristopher Hicks Portfolio</title>
 </head>
 
-<body class="relative text-white">
-  <div class="flex h-full p-4">
-    <div class="mx-auto w-full h-fit p-4 overflow-hidden bg-gray-900 max-w-5xl rounded-xl">
-      <h1 class="text-4xl sm:text-6xl font-semibold text-blue-300">Kristopher Hicks</h1>
-      <h1 class="text-2xl sm:text-4xl pb-8 font-semibold text-neutral-300">Portfolio</h1>
-      <h1 class="text-2xl sm:text-3xl pb-2 font-semibold text-neutral-400">About</h1>
-      <p class="font-medium text-justify">
-        I'm a motivated software engineering student in my junior year at Penn State with a love for learning. I'm
-        interested in making software that makes a difference. My goal is to take my coding skills to the next level
-        and
-        enter the workforce.
-        My interests outside of programming include working out, spending time with family and friends, philosophy,
-        reading, and watching YouTube.
-      </p>
-      <div class="flex flex-col gap-0 sm:flex-row sm:gap-16 m-auto max-w-xl">
-        <div>
-          <h1 class="inline-block text-2xl sm:text-3xl pt-8 font-semibold text-neutral-400">Languages</h1>
-          <ul class="pt-4 flex flex-col flex-wrap gap-3 list-inside list-disc marker:text-blue-400">
+<body class="overflow-hidden lg:overflow-auto text-white flex lg:justify-center lg:items-center lg:py-14 bg-[#0D111D]">
+  <div
+    class="relative overflow-auto lg:overflow-hidden w-screen h-screen lg:w-[1024px] lg:h-[1024px] lg:bg-auto bg-[#111727] lg:rounded-2xl lg:drop-shadow-glow lg:border border-sky-800 border-opacity-50">
+    <div
+      class="w-full h-fit lg:w-[1024px] lg:h-[1024px] p-2 flex-col justify-start items-center gap-[11px] inline-flex">
+      <img src="BG.png" width="1877" height="1533"
+        class="fixed select-none drag-none lg:absolute w-[1877px] h-[1533px] lg:h-[calc(100%+200px)] object-none left-0 top-[-200px]" />
+      <div class="lg:-z-10 absolute">
+        <img src="vec-2.svg" class="fixed left-0 lg:top-1/2 top-[calc(50vh-50px)] blur-[50px] animate-move-across" />
+        <!-- <img src="vec-2.svg" class="fixed left-0 lg:bottom-16 blur-[40px] animate-move-across" /> -->
+      </div>
+      <div class="self-stretch h-32 pb-[35px] flex-col justify-start items-start flex">
+        <div
+          class="text-[#A8D5FF] text-4xl overflow-visible lg:text-5xl leading-tight lg:leading-tight font-bold after:content-['Kristopher_Hicks'] after:bg-clip-text after:name-gradient relative">
+          Kristopher Hicks</div>
+        <div class="text-stone-50 text-[29px] font-semibold">Portfolio</div>
+      </div>
+      <img class="animate-fade-move-in w-[163px] h-[163px] rounded-full border-2 border-white" src="me.jpeg" />
+      <div class="animate-fade-move-in justify-start items-center gap-4 inline-flex">
+        <a href="https://www.linkedin.com/in/kristopher-hicks-62486b171/" target="_blank"
+          class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="linked-in.svg"
+            alt="LinkedIn" /></a>
+        <a href="https://github.com/kynhix" target="_blank"
+          class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="github.svg"
+            alt="GitHub" /></a>
+      </div>
+      <div class="self-stretch py-[53px] justify-center items-start gap-[7px] flex flex-col lg:flex-row lg:inline-flex">
+        <div
+          class="animate-fade-move-in p-2 bg-neutral-500 bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="lg:w-[473px] h-[35px] relative drop-shadow">
+            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">About
+            </div>
+          </div>
+          <div class="lg:w-[473px] text-justify text-opacity-90 text-xl font-normal">I'm a
+            motivated software engineering student with a love for learning. I'm interested in making software that
+            makes a difference. My goal is to take my coding skills to the next level and enter the workforce. My
+            interests outside of programming include working out, spending time with family and friends, philosophy,
+            reading, and watching YouTube.</div>
+        </div>
+        <div
+          class="animate-fade-move-in grow shrink basis-0 self-stretch px-2 py-1.5 bg-zinc-500 bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[235px] h-[37px] relative drop-shadow">
+            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">Languages
+            </div>
+          </div>
+          <ul class="self-stretch grow shrink list-disc list-inside basis-0 text-xl font-semibold">
             <li>JavaScript</li>
             <li>TypeScript</li>
             <li>C++</li>
@@ -40,11 +67,13 @@
             <li>SQL</li>
           </ul>
         </div>
-        <div class="w-full"></div>
-        <div>
-          <h1 class="inline-block text-2xl sm:text-3xl pt-8 font-semibold text-neutral-400">Technologies
-          </h1>
-          <ul class="pt-4 flex flex-col flex-wrap gap-3 list-inside list-disc marker:text-blue-400">
+        <div
+          class="animate-fade-move-in grow shrink basis-0 self-stretch p-2 bg-white bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
+          <div class="w-[234px] h-9 relative drop-shadow">
+            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">
+              Technologies</div>
+          </div>
+          <ul class="self-stretch list-disc list-inside text-xl font-semibold">
             <li>TailwindCSS</li>
             <li>NodeJS</li>
             <li>SolidJS</li>
@@ -54,38 +83,37 @@
           </ul>
         </div>
       </div>
-      <script>
-        const list = document.body.getElementsByTagName("li");
-        for (let i = 0; i < list.length; ++i) {
-          list[i].style = "animation: fadein 1s ease-out forwards " + (i * 0.05) + "s";
-        }
-      </script>
-      <h1 class="text-2xl sm:text-3xl pt-8 pb-4 font-semibold text-neutral-400">Projects</h1>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-        <a target="_blank" href="https://rockbox.kynhix.dev">
-          <div
-            class="m-auto p-1 bg-blue-500 min-h-[8em] rounded-xl text-center hover:bg-white hover:text-blue-500 transition-colors duration-500">
-            <h1 class="text-xl font-medium pt-1">Rockbox</h1>
-            <p class="pt-1 opacity-70">Live demo website for a band.</p>
-          </div>
+      <div class="animate-fade-move-in self-stretch text-[29px] font-semibold">Projects</div>
+      <div class="self-stretch justify-start items-center gap-4 flex-col lg:flex-row inline-flex">
+        <a href="https://rockbox.kynhix.dev/" target="_blank"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Rockbox</div>
+          <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">Website designed for a band. Made with SolidJS,
+            SolidStart, and Tailwind.</div>
         </a>
-        <a target="_blank" href="https://github.com/kynhix/portfolio">
-          <div
-            class="m-auto p-1 bg-blue-500 min-h-[8em] rounded-xl text-center hover:bg-white hover:text-blue-500 transition-colors duration-500">
-            <h1 class="text-xl font-medium pt-1">Portfolio</h1>
-            <p class="pt-1 opacity-70">This portfolio website.</p>
-          </div>
+        <a href="https://github.com/kynhix/portfolio" target="_blank"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Portfolio</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">Source code for this portolio website. Made
+            with minimal JavaScript, HTML, and Tailwind.</div>
         </a>
-        <a target="_blank" href="https://github.com/kynhix/solid-open-ecommerce">
-          <div
-            class="m-auto p-1 bg-blue-500 min-h-[8em] rounded-xl text-center hover:bg-white hover:text-blue-500 transition-colors duration-500">
-            <h1 class="text-xl font-medium pt-1">Ecommerce</h1>
-            <p class="pt-1 opacity-70">An ecommerce website I am working on using SolidJS and SolidStart.</p>
-          </div>
+        <a href="https://github.com/kynhix/solid-open-ecommerce" target="_blank"
+          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Ecommerce (WIP)</div>
+          <div class="self-stretch text-justify text-[13px] font-medium">This is my latest project that I am still
+            working on. It is an ecommerce site built with SolidJS, SolidStart, Supabase, and bootstrap.</div>
         </a>
       </div>
     </div>
   </div>
 </body>
+<script>
+  const els = document.getElementsByClassName("animate-fade-move-in");
+  for (let i = 0; i < els.length; ++i) {
+    els[i].classList.add("opacity-0");
+    els[i].style = "animation-delay: " + i * 0.05 + "s";
+  }
+</script>
 
 </html>

@@ -7,18 +7,40 @@
     font-family: 'Montserrat', sans-serif;
   }
   body {
-    background-image: url('/stacked-waves-haikei.svg');
-    background-size: cover;
-    /*background: theme(colors.gray.800);*/
     min-height: 100vh;
   }
-  li {
-    opacity: 0;
-    font-weight: 600;
-    transition: all 1s;
+}
+
+@layer components {
+  .name-gradient {
+    color: transparent;
+    position: absolute;
+    left: 0;
+    bottom: 0;  
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0,255,163,0.34) 0%, rgba(0,133,255,0.34) 32%, rgba(0,21,214,0.34) 68%, rgba(214,0,205,0.34) 100%);
+    pointer-events: none;
   }
-  @keyframes fadein {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+
+  @keyframes fade-move-in {
+    from {opacity: 0; transform: translateY(-100px);}
+    70% {opacity: 0.3;}
+    to {opacity: 1;}
+  }
+
+  @keyframes move-across {
+    0% {transform: translateX(-100vw);}
+    50%, 100% {transform: translateX(200vw);}
+  }
+
+  .coolbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: overlay;
+    background-color: white;
+    backdrop-filter: blur(200px);
+    z-index: -1;
   }
 }
