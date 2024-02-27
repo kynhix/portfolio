@@ -654,6 +654,14 @@ body {
   margin-top: auto;
 }
 
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1655,6 +1663,10 @@ body {
   .lg\:-mx-6 {
     margin-left: -1.5rem;
     margin-right: -1.5rem;
+  }
+
+  .lg\:mt-auto {
+    margin-top: auto;
   }
 
   .lg\:inline-flex {
