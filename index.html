@@ -17,10 +17,10 @@
   <div
     class="relative overflow-auto lg:overflow-hidden w-screen h-screen lg:w-[1024px] lg:h-[1024px] lg:bg-auto bg-[#111727] lg:rounded-2xl lg:drop-shadow-glow lg:border border-sky-800 border-opacity-50">
     <div
-      class="w-full h-fit bg-glow bg-fixed bg-[calc(0%-500px)_calc(0%-350px)] lg:bg-[50%_calc(50%-50px)] lg:w-[1024px] lg:h-[1024px] p-2 flex-col justify-start items-center gap-[11px] inline-flex">
+      class="w-full h-fit bg-glow bg-fixed bg-[calc(0%-500px)_calc(0%-350px)] lg:bg-[50%_calc(50%-50px)] lg:w-[1024px] lg:h-[1024px] p-6 flex-col justify-start items-center gap-[11px] inline-flex">
       <div class="lg:-z-10 absolute select-none">
         <img src="vec-2.svg"
-          class="select-none fixed left-0 lg:top-1/2 top-[calc(50vh-50px)] blur-[50px] animate-move-across" />
+          class="hidden select-none fixed left-0 lg:top-1/2 top-[calc(50vh-50px)] blur-[50px] animate-move-across" />
       </div>
       <div class="self-stretch h-32 pb-[35px] flex-col justify-start items-start flex">
         <div
@@ -28,8 +28,8 @@
           Kristopher Hicks</div>
         <div class="text-stone-50 text-[29px] font-semibold">Portfolio</div>
       </div>
-      <img class="animate-fade-move-in w-[163px] h-[163px] rounded-full border-2 border-white" src="me.jpeg" />
-      <div class="animate-fade-move-in justify-start items-center gap-4 inline-flex">
+      <img class="w-[163px] h-[163px] rounded-full" src="me.png" />
+      <div class="justify-start items-center gap-4 inline-flex">
         <a href="https://www.linkedin.com/in/kristopher-hicks-62486b171/" target="_blank"
           class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="linked-in.svg"
             alt="LinkedIn" /></a>
@@ -37,70 +37,78 @@
           class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="github.svg"
             alt="GitHub" /></a>
       </div>
-      <div class="self-stretch py-[53px] justify-center items-start gap-[7px] flex flex-col lg:flex-row lg:inline-flex">
-        <div
-          class="animate-fade-move-in p-2 bg-neutral-500 bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
+      <div
+        class="self-stretch mt-[53px] -mx-6 lg:-mx-7 p-4 px-6 justify-center items-start gap-8 bg-neutral-500 bg-opacity-0 border-y shadow-inner border-t-sky-300 border-sky-800 border-opacity-20 backdrop-blur-[200px] flex flex-col lg:flex-row lg:inline-flex">
+        <div class="flex-col justify-start items-start gap-2 inline-flex">
           <div class="lg:w-[473px] h-[35px] relative drop-shadow">
-            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">About
+            <div class="text-stone-50 text-[29px] font-semibold">
+              Bio
             </div>
           </div>
-          <div class="lg:w-[473px] text-justify text-opacity-90 text-xl font-normal">I'm a
-            motivated software engineering student with a love for learning. I'm interested in making software that
-            makes a difference. My goal is to take my coding skills to the next level and enter the workforce. My
-            interests outside of programming include working out, spending time with family and friends, philosophy,
-            reading, and watching YouTube.</div>
+          <div class="lg:w-[473px] text-justify text-opacity-90 text-xl font-normal break-words">Hi, my name is Kris,
+            and I am a
+            motivated software engineering student attending Penn State University. I have a passion for creating
+            software solutions. As a full-stack developer, I want to take my skills to the next level and further my
+            career as a developer. Outside of coding I enjoy 🏋️ working out, 🥾 hiking, 👨🏻‍🍳 cooking, and spending
+            time with loved ones.</div>
         </div>
-        <div
-          class="animate-fade-move-in grow shrink basis-0 self-stretch px-2 py-1.5 bg-zinc-500 bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
+        <div class="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2 inline-flex">
           <div class="w-[235px] h-[37px] relative drop-shadow">
-            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">Languages
+            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold"> Skills
             </div>
           </div>
-          <ul class="self-stretch grow shrink list-disc list-inside basis-0 text-xl font-semibold">
-            <li>JavaScript</li>
-            <li>TypeScript</li>
-            <li>C++</li>
-            <li>Java</li>
-            <li>Lua</li>
-            <li>SQL</li>
-          </ul>
-        </div>
-        <div
-          class="animate-fade-move-in grow shrink basis-0 self-stretch p-2 bg-white bg-opacity-0 rounded-[18px] border border-white border-opacity-10 backdrop-blur-[200px] flex-col justify-start items-start gap-2 inline-flex">
-          <div class="w-[234px] h-9 relative drop-shadow">
-            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold">
-              Technologies</div>
-          </div>
-          <ul class="self-stretch list-disc list-inside text-xl font-semibold">
-            <li>TailwindCSS</li>
-            <li>NodeJS</li>
-            <li>SolidJS</li>
-            <li>SolidStart</li>
-            <li>Linux</li>
-            <li>Netlify</li>
+          <ul class="flex flex-wrap gap-3 text-xl justify-center font-semibold">
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              JavaScript
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              TypeScript</li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">C++
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">Java
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">Lua
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">SQL
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              TailwindCSS</li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              NodeJS
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              SolidJS</li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              Linux
+            </li>
+            <li class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md">
+              Netlify</li>
           </ul>
         </div>
       </div>
-      <div class="animate-fade-move-in self-stretch text-[29px] font-semibold">Projects</div>
+      <div class="mt-auto self-stretch text-[29px] font-semibold">Projects</div>
       <div class="self-stretch justify-start items-center gap-4 flex-col lg:flex-row inline-flex">
+        <a href="https://secret-room-game.kynhix.dev/" target="_blank"
+          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          <div class="text-center text-[29px] font-semibold">Secret Room Game</div>
+          <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
+          <div class="self-stretch text-center text-[13px] font-medium">A game loosely based on finding the secret
+            room
+            in The Binding of Isaac.</div>
+        </a>
         <a href="https://rockbox.kynhix.dev/" target="_blank"
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
           <div class="text-center text-[29px] font-semibold">Rockbox</div>
           <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">Website designed for a band. Made with SolidJS,
+          <div class="self-stretch text-center text-[13px] font-medium">Website designed for a band. Made with
+            SolidJS,
             SolidStart, and Tailwind.</div>
         </a>
         <a href="https://github.com/kynhix/portfolio" target="_blank"
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
+          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
           <div class="text-center text-[29px] font-semibold">Portfolio</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">Source code for this portolio website. Made
+          <div class="self-stretch text-center text-[13px] font-medium">Source code for this portolio website. Made
             with minimal JavaScript, HTML, and Tailwind.</div>
-        </a>
-        <a href="https://github.com/kynhix/solid-open-ecommerce" target="_blank"
-          class="animate-fade-move-in grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Ecommerce (WIP)</div>
-          <div class="self-stretch text-justify text-[13px] font-medium">This is my latest project that I am still
-            working on. It is an ecommerce site built with SolidJS, SolidStart, Supabase, and bootstrap.</div>
         </a>
       </div>
     </div>
