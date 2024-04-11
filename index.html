@@ -13,23 +13,22 @@
   <title>Kristopher Hicks Portfolio</title>
 </head>
 
-<body
-  class="overflow-hidden lg:overflow-auto text-sky-100 flex lg:justify-center lg:items-center lg:py-14 bg-[#0D111D]">
+<body class="text-sky-100 flex lg:justify-center lg:items-center lg:py-14 bg-[#0D111D]">
   <div
-    class="relative overflow-auto shadow-md shadow-[#0D111D] lg:overflow-hidden w-screen h-screen lg:w-[1024px] lg:h-[1024px] lg:bg-auto bg-[#111727] lg:rounded-2xl lg:drop-shadow-glow before:rounded-2xl">
+    class="relative overflow-auto shadow-md shadow-[#0D111D] w-screen lg:w-[1024px] lg:bg-auto bg-[#111727] lg:rounded-2xl lg:drop-shadow-glow before:rounded-2xl">
     <div
-      class="w-full h-fit bg-glow bg-fixed bg-[calc(0%-500px)_calc(0%-350px)] lg:bg-[50%_calc(50%-50px)] lg:w-[1024px] lg:h-[1024px] p-6 flex-col justify-start items-center gap-[11px] inline-flex">
+      class="relative w-full h-fit bg-glow bg-fixed bg-[calc(0%-500px)_calc(0%-350px)] lg:bg-[50%_calc(50%-50px)] lg:w-[1024px] p-6 pb-20 flex-col justify-start items-center gap-[11px] inline-flex">
       <div class="lg:-z-10 absolute select-none">
         <img src="vec-2.svg"
           class="hidden select-none fixed left-0 lg:top-1/2 top-[calc(50vh-50px)] blur-[50px] animate-move-across" />
       </div>
       <div class="self-stretch h-32 pb-[35px] flex-col justify-start items-start flex">
-        <div
+        <h1
           class="text-[#A8D5FF] text-4xl overflow-visible lg:text-5xl leading-tight lg:leading-tight font-bold after:content-['Kristopher_Hicks'] after:bg-clip-text after:name-gradient relative">
-          Kristopher Hicks</div>
-        <div class="text-stone-50 text-[29px] font-semibold">Portfolio</div>
+          Kristopher Hicks</h1>
+        <h2 class="text-stone-50 text-[29px] font-semibold">Portfolio</h2>
       </div>
-      <img class="w-[163px] h-[163px] rounded-full" src="me.png" />
+      <img class="w-40 h-40 rounded-full" src="me.png" />
       <div class="justify-start items-center gap-4 inline-flex">
         <a href="https://www.linkedin.com/in/kristopher-hicks-62486b171/" target="_blank"
           class="w-12 h-12 relative transition-transform duration-500 hover:scale-110"><img src="linked-in.svg"
@@ -39,103 +38,149 @@
             alt="GitHub" /></a>
       </div>
       <div
-        class="self-stretch mt-[53px] -mx-6 lg:-mx-6 p-4 px-6 justify-center items-start gap-8 bg-slate-900 bg-opacity-100 shadow-inner border-x-sky-700 border-t-slate-600 border-slate-700 border-opacity-30 backdrop-blur-[200px] flex flex-col lg:flex-row lg:inline-flex">
+        class="self-stretch my-10 p-6 px-6 justify-center items-start rounded-md gap-8 bg-gray-900 bg-opacity-100 border-t border-slate-100/10 shadow shadow-gray-950/50 shadow-md flex flex-col lg:flex-row lg:inline-flex">
         <div class="flex-col justify-start items-start gap-2 inline-flex">
-          <div class="lg:w-[473px] h-[35px] relative drop-shadow">
-            <div class="text-stone-50 text-[29px] font-semibold">
-              Bio
-            </div>
-          </div>
-          <div class="lg:w-[473px] text-justify text-opacity-90 text-xl font-normal break-words">Hi, my name is Kris,
+          <h2 class="text-stone-50 text-3xl font-semibold mb-4"> About me </h2>
+          <div class="lg:w-[473px] text-blue-50 text-xl leading-8 font-normal break-words">Hi, my name is Kris,
             and I am a
             motivated software engineering student attending Penn State University. I have a passion for creating
             software solutions. As a full-stack developer, I want to take my skills to the next level and further my
-            career as a developer. Outside of coding I enjoy 🏋️ working out, 🥾 hiking, 👨🏻‍🍳 cooking, and spending
+            career as a software engineer. Outside of coding I enjoy 🏋️ working out, 🥾 hiking, 👨🏻‍🍳 cooking, and
+            spending
             time with loved ones.</div>
         </div>
-        <div class="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-2 inline-flex">
-          <div class="w-[235px] h-[37px] relative drop-shadow">
-            <div class="left-[3px] top-0 absolute text-stone-50 text-[29px] font-semibold"> Skills
-            </div>
-          </div>
+        <div class="grow shrink flex-col justify-start items-start gap-2 inline-flex">
+          <h2 class="text-stone-50 text-3xl font-semibold mb-4"> Skills </h2>
           <ul class="flex flex-wrap gap-3 text-xl justify-center font-semibold">
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               JavaScript
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               TypeScript</li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               C++
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               Java
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               Lua
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               SQL
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
-              TailwindCSS</li>
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              Tailwind</li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
-              NodeJS
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              Node
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
-              SolidJS</li>
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              React</li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
               Linux
             </li>
             <li
-              class="px-2 py-1 w-36 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
-              Netlify</li>
+              class="px-2 py-1 w-32 text-center bg-slate-200 text-slate-900 shadow shadow-slate-950 rounded-md duration-300 transition-all hover:-translate-y-1 hover:shadow-md hover:shadow-slate-950">
+              Serverless</li>
           </ul>
         </div>
       </div>
-      <div class="mt-8 lg:mt-auto self-stretch text-[29px] font-semibold">Projects</div>
-      <div class="self-stretch justify-start items-center gap-4 flex-col lg:flex-row inline-flex">
-        <a href="https://secret-room-game.kynhix.dev/" target="_blank"
-          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Secret Room Game</div>
-          <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
-          <div class="self-stretch text-center text-[13px] font-medium">A game loosely based on finding the secret
-            room
-            in The Binding of Isaac.</div>
-        </a>
-        <a href="https://rockbox.kynhix.dev/" target="_blank"
-          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Rockbox</div>
-          <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div>
-          <div class="self-stretch text-center text-[13px] font-medium">Website designed for a band. Made with
-            SolidJS,
-            SolidStart, and Tailwind.</div>
-        </a>
-        <a href="https://github.com/kynhix/portfolio" target="_blank"
-          class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-lg border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex">
-          <div class="text-center text-[29px] font-semibold">Portfolio</div>
-          <div class="self-stretch text-center text-[13px] font-medium">Source code for this portolio website. Made
-            with minimal JavaScript, HTML, and Tailwind.</div>
-        </a>
+    </div>
+    <div class='flex flex-col gap-24 relative bg-gray-900 pt-20 pb-8 p-4 lg:px-8 w-full'>
+      <div
+        class="absolute shadow-md shadow-gray-950/40 mx-auto top-0 left-0 right-0 transform -translate-y-1/2 w-52 py-4 text-slate-50 text-center text-3xl bg-slate-950 font-semibold">
+        Projects
       </div>
+      <div
+        class="mt-8 flex flex-col lg:h-96 lg:flex-row items-center rounded-lg overflow-hidden w-fit mx-auto shadow-lg shadow-gray-950/70 justify-between">
+        <div class='flex relative w-full overflow-hidden shadow-inner shadow-black max-w-lg lg:max-w-sm flex-1 h-full'>
+          <img width="1240" height="1105" alt='winning competition' class="relative mx-auto w-full object-cover"
+            src='community-sos.png' />
+        </div>
+        <div class='flex flex-col bg-slate-800 w-full h-full flex-1 p-4 max-w-lg lg:max-w-full'>
+          <div class="h-3/4">
+            <h2 class='text-2xl font-medium tracking-tight mb-4'>Community SOS</h2>
+            <p class='text-lg leading-8'>CommunitySOS is a web app that aims to connect communities to volunteers.
+              Developed at the spring HackPSU 2024 hackathon. Won the <i>"Best Use of React" </i>award.</p>
+          </div>
+          <a class="self-center mt-10 lg:my-auto bg-indigo-500 rounded-md font-semibold transition-all duration-300 hover:bg-violet-400 hover:shadow-lg p-4 px-6 text-lg"
+            href='https://devpost.com/software/communitysos' target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="mt-8 flex flex-col lg:h-96 lg:flex-row-reverse items-center rounded-lg overflow-hidden w-fit mx-auto shadow-lg shadow-gray-950/70 justify-between">
+        <div class='flex relative w-full overflow-hidden shadow-inner shadow-black max-w-lg lg:max-w-sm flex-1 h-full'>
+          <img width="1240" height="1105" alt='winning competition' class="relative mx-auto w-full object-cover"
+            src='community-sos.png' />
+        </div>
+        <div class='flex flex-col bg-slate-800 w-full h-full flex-1 p-4 max-w-lg lg:max-w-full'>
+          <div class="h-3/4">
+            <h2 class='text-2xl font-medium tracking-tight mb-4'>Community SOS</h2>
+            <p class='text-lg leading-8'>CommunitySOS is a web app that aims to connect communities to volunteers.
+              Developed at the spring HackPSU 2024 hackathon. Won the <i>"Best Use of React" </i>award.</p>
+          </div>
+          <a class="self-center mt-10 lg:my-auto bg-indigo-500 rounded-md font-semibold transition-all duration-300 hover:bg-violet-400 hover:shadow-lg p-4 px-6 text-lg"
+            href='https://devpost.com/software/communitysos' target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <div
+        class="mt-8 flex flex-col lg:h-96 lg:flex-row items-center rounded-lg overflow-hidden w-fit mx-auto shadow-lg shadow-gray-950/70 justify-between">
+        <div class='flex relative w-full overflow-hidden shadow-inner shadow-black max-w-lg lg:max-w-sm flex-1 h-full'>
+          <img width="1240" height="1105" alt='winning competition' class="relative mx-auto w-full object-cover"
+            src='community-sos.png' />
+        </div>
+        <div class='flex flex-col bg-slate-800 w-full h-full flex-1 p-4 max-w-lg lg:max-w-full'>
+          <div class="h-3/4">
+            <h2 class='text-2xl font-medium tracking-tight mb-4'>Community SOS</h2>
+            <p class='text-lg leading-8'>CommunitySOS is a web app that aims to connect communities to volunteers.
+              Developed at the spring HackPSU 2024 hackathon. Won the <i>"Best Use of React" </i>award.</p>
+          </div>
+          <a class="self-center mt-10 lg:my-auto bg-indigo-500 rounded-md font-semibold transition-all duration-300 hover:bg-violet-400 hover:shadow-lg p-4 px-6 text-lg"
+            href='https://devpost.com/software/communitysos' target="_blank">
+            Learn more
+          </a>
+        </div>
+      </div>
+      <!-- <div class="self-stretch justify-start items-center gap-4 flex-col lg:flex-row inline-flex"> -->
+      <!--   <a href="https://secret-room-game.kynhix.dev/" target="_blank" -->
+      <!--     class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-md border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex"> -->
+      <!--     <div class="text-center text-[29px] font-semibold">Secret Room Game</div> -->
+      <!--     <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div> -->
+      <!--     <div class="self-stretch text-center text-[13px] font-medium">A game loosely based on finding the secret -->
+      <!--       room -->
+      <!--       in The Binding of Isaac.</div> -->
+      <!--   </a> -->
+      <!--   <a href="https://rockbox.kynhix.dev/" target="_blank" -->
+      <!--     class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-md border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex"> -->
+      <!--     <div class="text-center text-[29px] font-semibold">Rockbox</div> -->
+      <!--     <div class="text-center text-[22px] font-medium -mt-4">(Live Demo)</div> -->
+      <!--     <div class="self-stretch text-center text-[13px] font-medium">Website designed for a band. Made with -->
+      <!--       SolidJS, -->
+      <!--       SolidStart, and Tailwind.</div> -->
+      <!--   </a> -->
+      <!--   <a href="https://github.com/kynhix/portfolio" target="_blank" -->
+      <!--     class="grow shrink basis-0 backdrop-brightness-[3.0] transition-all duration-500 self-stretch p-2 bg-white bg-opacity-0 rounded-md border border-white border-opacity-5 hover:border-opacity-30 hover:shadow-md hover:shadow-black/40 hover:bg-opacity-10 backdrop-blur-[200px] flex-col justify-start items-center gap-2 inline-flex"> -->
+      <!--     <div class="text-center text-[29px] font-semibold">Portfolio</div> -->
+      <!--     <div class="self-stretch text-center text-[13px] font-medium">Source code for this portolio website. Made -->
+      <!--       with minimal JavaScript, HTML, and Tailwind.</div> -->
+      <!--   </a> -->
+      <!-- </div> -->
     </div>
   </div>
 </body>
-<script>
-  const els = document.getElementsByClassName("animate-fade-move-in");
-  for (let i = 0; i < els.length; ++i) {
-    els[i].classList.add("opacity-0");
-    els[i].style = "animation-delay: " + i * 0.05 + "s";
-  }
-</script>
 
 </html>
