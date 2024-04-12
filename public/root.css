@@ -1463,6 +1463,10 @@ body {
   text-align: center;
 }
 
+.text-justify {
+  text-align: justify;
+}
+
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -1595,6 +1599,10 @@ body {
 .text-neutral-300 {
   --tw-text-opacity: 1;
   color: rgb(212 212 212 / var(--tw-text-opacity));
+}
+
+.text-opacity-90 {
+  --tw-text-opacity: 0.9;
 }
 
 .opacity-0 {
